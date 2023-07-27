@@ -13,6 +13,8 @@ export class MoviesComponent {
   popularMovies: Movie[];
   movieRepository: MovieRepository;
 
+  filterText: string = "";
+
   constructor(){
     this.movieRepository = new MovieRepository();
     this.movies = this.movieRepository.getMovies();

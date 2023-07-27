@@ -5,10 +5,10 @@ export class MovieRepository{
 
     constructor(){
         this.movies = [
-            {id: 1, title: "Oppenheimer", description: "lorem10", imageURL: "Oppenheimer.jpg", isPopular: true},
-            {id: 2, title: "Barbie", description: "lorem10", imageURL: "Barbie.jpg", isPopular: true},
-            {id: 3, title: "Hızlı ve Öfkeli 9", description: "lorem10", imageURL: "HizliveOfkeli.jpeg", isPopular: false},
-            {id: 4, title: "IT Chapter 2", description: "lorem10", imageURL: "it.webp", isPopular: false}
+            {id: 1, title: "Oppenheimer", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae officiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", imageURL: "Oppenheimer.jpg", isPopular: true, datePublished: new Date(2023, 1, 5)},
+            {id: 2, title: "Barbie", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae officiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", imageURL: "Barbie.jpg", isPopular: true, datePublished: new Date(2023, 1, 5)},
+            {id: 3, title: "Hızlı ve Öfkeli 9", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae officiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", imageURL: "HizliveOfkeli.jpeg", isPopular: false, datePublished: new Date(2023, 1, 5)},
+            {id: 4, title: "IT Chapter 2", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus tempora dolores reprehenderit nisi minima, et nam deleniti facilis amet impedit, veniam possimus, cupiditate illo accusantium ad assumenda. Facere numquam illo nesciunt animi, explicabo architecto eaque dolor cupiditate molestias, vitae dolores.            ", imageURL: "it.webp", isPopular: false, datePublished: new Date(2023, 1, 5)}
         ]
     }
 
