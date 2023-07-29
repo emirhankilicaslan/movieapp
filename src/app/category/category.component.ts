@@ -9,9 +9,21 @@ import { CategoryRepository } from '../models/category.repository';
 export class CategoryComponent {
   categories: Category[];
   categoryRepository: CategoryRepository;
+  selectedCategory: Category;
 
   constructor(){
     this.categoryRepository = new CategoryRepository();
     this.categories = this.categoryRepository.getCategories();
+  }
+
+  displayAll = true;
+  selectCategory(item?: Category){
+    if(item){
+      this.selectedCategory = item;
+      this.displayAll = false;
+    }else{
+      this.selectedCategory = null;
+      this.displayAll = true;
+    }
   }
 }
