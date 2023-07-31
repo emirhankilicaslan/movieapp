@@ -5,8 +5,8 @@
        class="list-group-item list-group-item-action">Tum Kategoriler</a>
 
     <a href="#" 
-       *ngFor="let item of categories" 
+       *ngFor="let item of categories"
        [class.active]="!displayAll && selectedCategory.id == item.id"
        (click)="selectCategory(item)"
-       class="list-group-item list-group-item-action">{{item.name}}</a>
+       class="list-group-item list-group-item-action">{{item.name | titlecase}}</a>
 </div>

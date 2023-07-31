@@ -6,9 +6,9 @@
         {"id": 4, "title": "IT Chapter:2", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "it.webp"}
     ],
     "categories": [
-        {"id": 1, "title": "Macera"},
-        {"id": 2, "title": "Korku"},
-        {"id": 3, "title": "Fantastik"},
-        {"id": 4, "title": "Bilim Kurgu"}
+        {"id": 1, "name": "Macera"},
+        {"id": 2, "name": "Korku"},
+        {"id": 3, "name": "Fantastik"},
+        {"id": 4, "name": "Bilim Kurgu"}
     ] 
 }
