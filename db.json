@@ -1,9 +1,9 @@
 {
     "movies": [
-        {"id": 1, "title": "Oppenheimer", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "Oppenheimer.jpg"},
-        {"id": 2, "title": "Barbie", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "Barbie.jpg"},
-        {"id": 3, "title": "Hızlı ve Öfkeli 9", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "HizliveOfkeli.jpeg"},
-        {"id": 4, "title": "IT Chapter:2", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "it.webp"}
+        {"id": 1, "title": "Oppenheimer", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "Oppenheimer.jpg", "categoryId": 1},
+        {"id": 2, "title": "Barbie", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "Barbie.jpg", "categoryId": 2},
+        {"id": 3, "title": "Hızlı ve Öfkeli 9", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "HizliveOfkeli.jpeg", "categoryId": 3},
+        {"id": 4, "title": "IT Chapter:2", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione aliquid beatae of ficiis, amet odit atque ipsam cumque modi suscipit magnam maiores illum rerum corrupti ut praesentium dolor doloribus quisquam.", "imageURL": "it.webp", "categoryId": 4}
     ],
     "categories": [
         {"id": 1, "name": "Macera"},

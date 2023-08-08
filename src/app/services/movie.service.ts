@@ -1,6 +1,7 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
+import { Observable, throwError } from "rxjs";
+import { catchError, tap } from "rxjs/operators";
 import { Movie } from "../models/movie";
 
 @Injectable()
@@ -10,7 +11,29 @@ export class MovieService{
 
     constructor(private http: HttpClient){}
 
-    getMovies(): Observable<Movie[]>{
-        return this.http.get<Movie[]>(this.url);
+    getMovies(categoryId: number): Observable<Movie[]>{
+
+        let newUrl = this.url;
+
+        if(categoryId){
+            newUrl += "?categoryId=" + categoryId; 
+        }
+
+        return this.http.get<Movie[]>(newUrl)
+        .pipe(
+            tap(data => console.log(data)),
+            catchError(this.handleError)
+        );
+    }
+
+    getMoviesById(movieId: number): Observable<Movie>{
+        return this.http.get<Movie>(this.url +  "/" + movieId).pipe(
+            tap(data => console.log(data)),
+            catchError(this.handleError)
+        );
+    }
+
+    private handleError(error: HttpErrorResponse){
+        return throwError(() => new Error('Bir hata olustu.'));
     }
 }
