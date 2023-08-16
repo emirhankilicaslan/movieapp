@@ -48,39 +48,21 @@
     },
     {
       "id": 9,
+      "title": "DENEME",
+      "description": "ACIKLAMA",
+      "imageURL": "Barbie.jpg",
       "isPopular": false,
-      "datePublished": 1691585709829,
-      "categoryId": "-1"
+      "datePublished": 1692087787217,
+      "categoryId": 2
     },
     {
       "id": 10,
+      "title": "deneme2 ",
+      "description": "aciklama",
+      "imageURL": "Oppenheimer.jpg",
       "isPopular": false,
-      "datePublished": 1691585717059,
-      "categoryId": "-1"
-    },
-    {
-      "id": 11,
-      "isPopular": false,
-      "datePublished": 1691585766642,
-      "categoryId": "-1"
-    },
-    {
-      "id": 12,
-      "isPopular": false,
-      "datePublished": 1691585981176,
-      "categoryId": "-1"
-    },
-    {
-      "id": 13,
-      "isPopular": false,
-      "datePublished": 1691586029785,
-      "categoryId": "-1"
-    },
-    {
-      "id": 14,
-      "isPopular": false,
-      "datePublished": 1691586056907,
-      "categoryId": "-1"
+      "datePublished": 1692088186532,
+      "categoryId": 3
     }
   ],
   "categories": [

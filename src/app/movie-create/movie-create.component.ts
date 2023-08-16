@@ -52,17 +52,17 @@ export class MovieCreateComponent implements OnInit{
 
   createMovie(){
 
-    // const movie = {
-    //   id: 0,
-    //   title: this.model.title,
-    //   description: this.model.description,
-    //   imageURL: this.model.imageURL,
-    //   isPopular: false,
-    //   datePublished: new Date().getTime(),
-    //   categoryId: this.model.categoryId
-    // };
+    const movie = {
+      id: 0,
+      title: this.movieForm.value.title,
+      description: this.movieForm.value.description,
+      imageURL: this.movieForm.value.imageURL,
+      isPopular: false,
+      datePublished: new Date().getTime(),
+      categoryId: +this.movieForm.value.categoryId
+    };
 
-    // this.movieService.createMovie(movie).subscribe(data=> this.router.navigate(['/movies', data.id]));
+    this.movieService.createMovie(movie).subscribe(data=> this.router.navigate(['/movies']));
   }
 
   log(value: any){

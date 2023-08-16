@@ -16,7 +16,7 @@ export class MoviesComponent implements OnInit{
   filteredMovies: Movie[] = [];
   filterText: string = "";
   error: any;
-
+  loading: boolean = false;
   constructor(
     private alertify:AlertifyService,
     private movieService: MovieService,
@@ -24,12 +24,17 @@ export class MoviesComponent implements OnInit{
   ){}
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
-      this.movieService.getMovies(params["categoryId"]).subscribe(
-        (data) => {
-          this.movies = data;
-          this.filteredMovies = this.movies;
-        }, error => this.error = error);
-    })
+      this.loading = true;
+      this.movieService.getMovies(params["categoryId"]).subscribe({next: data => {
+        this.movies = data;
+        this.filteredMovies = this.movies;
+        this.loading = false;
+      },error: error => {
+        this.error = error;
+        this.loading = false;
+      }});
+    });
+
   }
 
   onInputChanged(){
